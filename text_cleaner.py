@@ -16,6 +16,16 @@ def clean_text(text):
     text = re.sub(r'\( ?\n\n', '(', text)
     text = re.sub(r'(\w)\n\n(\w)', '\g<1> \g<2>', text, flags=re.IGNORECASE)
     text = re.sub(r'\n\n(["§])\n\n', ' \g<1> ', text)
+    text = text.replace('"', '')
+    text = text.replace('‘', '')
+    text = text.replace('’', '')
+    text = text.replace('A C Ó R D Ã O ', 'ACÓRDÃO\n\n')
+    text = text.replace('V O T O ', 'VOTO\n\n')
+    text = re.sub(r'\(\.+,?\)?:?;?\.?', '', text)
+    text = re.sub(r'\(!+\)', '', text)
+    text = re.sub(r'\(\*+\)', '', text)
+    text = re.sub(r'\(\++\)?', '', text)
+    text = re.sub(r'\(\-+\)?', '', text)
     text = text.strip('\n\n')
 
     return text
