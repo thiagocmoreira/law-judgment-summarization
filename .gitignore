@@ -44,3 +44,6 @@ geckodriver.log
 *.iml
 
 /data
+/images
+/models
+/word_embeddings
