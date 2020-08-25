@@ -1,1 +1,1 @@
-# Sumarização de Sentenças Judiciais
+# Sumarização Automática de Acórdãos
