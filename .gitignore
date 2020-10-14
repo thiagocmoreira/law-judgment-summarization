@@ -45,5 +45,6 @@ geckodriver.log
 
 /data
 /images
-/models
+/models/wandb
+/models/predictions
 /word_embeddings
