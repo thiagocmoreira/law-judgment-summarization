@@ -43,7 +43,7 @@ package-lock.json
 geckodriver.log
 *.iml
 
-/data
+# /data
 /images
 /models/wandb
 /models/predictions
